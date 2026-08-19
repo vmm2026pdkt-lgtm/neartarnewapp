@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #17375e;
+  --color-secondary: #ff4b6e;
+  --color-bg: #f5f7fa;
+
+  --radius-card: 18px;
+
+  --shadow-card: 0 4px 20px rgba(23, 55, 94, 0.08);
+  --shadow-card-hover: 0 8px 28px rgba(23, 55, 94, 0.14);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
